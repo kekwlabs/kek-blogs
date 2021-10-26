@@ -1,3 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
+
 .top {
     text-align: center;
 }
+
+.mono {
+    font-family: "Roboto Mono", Monaco, Consolas, "Ubuntu Mono", monospace;
+}
+
+.desc {
+    margin-top: 1rem;
+}
+
