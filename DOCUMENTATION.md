@@ -9,6 +9,13 @@ This project is new and we expect you to atleast know basic reactjs and also bas
 - Animation: [Framer motion](https://www.framer.com/motion/)
 - Hosting: [cloudflare-pages](https://pages.dev)
 
+
+## Guidelines
+Keep the following point in mind when making a PR:
+1. Make sure to run `npm run lint` to make sure your code passes the automatic checks (try to fix all the bugs which come up if u can)
+2. We prefer the commit messages should be like: `"home: change btn color to cyan"` or `"doc: add contributor to readme"` or any relevant names you can come up depending on which part of the code the changes have been made.
+3. Try to commit more often, and dont hesitate to send the smallest of changes as a PR.
+
 ## Structure
 
 The project has not been made yet, please make sure to update this document and TODO as the features will be implemented.
