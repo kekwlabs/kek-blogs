@@ -2,6 +2,8 @@
 
 This project is new and we expect you to atleast know basic reactjs and also basics of web development for you to understand this. Information about static site generation would be a plus.
 
+## Stack
+
 - Language: [TypeScript](https://www.typescriptlang.org/)
 - Framework: [Next.js](https://nextjs.org/docs)
 - Style Framework: [Chakra UI](https://chakra-ui.com/)
@@ -13,12 +15,12 @@ This project is new and we expect you to atleast know basic reactjs and also bas
 ## Guidelines
 Keep the following point in mind when making a PR:
 1. Make sure to run `npm run lint` to make sure your code passes the automatic checks (try to fix all the bugs which come up if u can)
-2. We prefer the commit messages should be like: `"home: change btn color to cyan"` or `"doc: add contributor to readme"` or any relevant names you can come up depending on which part of the code the changes have been made.
+2. We prefer that the commit messages should be like: `"home: change btn color to cyan"` or `"doc: add contributor to readme"` or any relevant names you can come up depending on which part of the code the changes have been made.
 3. Try to commit more often, and dont hesitate to send the smallest of changes as a PR.
 
 ## Structure
 
-The project has not been made yet, please make sure to update this document and TODO as the features will be implemented.
+The project is very new and in its early stages of development, please make sure to update this document and TODO as the features will be implemented.
 
 Routes-
 
