@@ -1,0 +1,15 @@
+# Lints code on every PR and commit to master
+
+name: Lint
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Lint Code
+        run: npm run lint
