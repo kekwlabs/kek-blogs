@@ -8,8 +8,6 @@ const Home: NextPage = () => {
     return window.open('https://kekwlabs.github.io')
   }
 
-  let lol: String= "what"
-
   return (
     <main>
       <section className={`${styles.mono} ${styles.top}`}>
