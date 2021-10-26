@@ -32,6 +32,12 @@ const Home: NextPage = () => {
             {blogs}
         </div>
       </section>
+
+      <Container padding="1.5rem" centerContent>
+        <Text fontSize="1.12rem" color="cyan.500" as="b">
+          <a href="https://github.com/orgs/kekwlabs/people">&copy; kekwLabs</a>
+        </Text>
+      </Container>
     </main>
   )
 }
