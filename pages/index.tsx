@@ -11,10 +11,12 @@ const Home: NextPage = () => {
 
   let blogs =  Blogs.map((blog: Blog, i) => {
     return (
-    <Container maxW="container.lg" className={styles.blog}>
-      <Text fontSize="3xl">{blog.title}</Text>
-      <Text fontSize="1xl">{blog.description}</Text>
-    </Container>
+      <Container maxW="container.lg" className={styles.blog} key={i}>
+        <Text as="u" fontSize="3xl">{blog.title}</Text>
+        <Text fontSize="1xl">{blog.description}</Text>
+        <br />
+        <hr color="#00B5D8" />
+      </Container>
     )
   })
 
