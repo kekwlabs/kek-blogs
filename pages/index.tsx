@@ -12,10 +12,10 @@ const Home: NextPage = () => {
 
   return (
     <main>
-      <section className={styles.top}>
+      <section className={`${styles.mono} ${styles.top}`}>
         <Container maxW="container.lg">
-          <Text as="b" className={styles.mono} fontSize="4xl" color="cyan.500">KekwLabs Blog</Text>
-          <Text className={`${styles.mono} ${styles.desc}`} fontSize="1.1rem">Blog platform for kekwlabs&apos; members to publish research blogs and writups based on computer science and security.</Text>
+          <Text as="b" fontSize="4xl" color="cyan.500">KekwLabs Blog</Text>
+          <Text className={styles.desc} fontSize="1.1rem">Blog platform for kekwlabs&apos; members to publish research blogs and writups based on computer science and security.</Text>
           <Button onClick={homepage} className={styles.btn} colorScheme="cyan">Join Us</Button>
         </Container>
       </section>
