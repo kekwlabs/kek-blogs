@@ -11,3 +11,8 @@ We are to welcome contributors of all experience levels. You can either [raise a
 [Here](https://opensource.com/article/19/7/create-pull-request-github) is a guide of how to make a "pull request" to a github repository. If you are still facing issues, you can ping our staff at [Our Discord Server](https://dsc.gg/kekwlabs).
 
 You can read our [documentation](https://github.com/kekwlabs/kek-blogs/blob/master/DOCUMENTATION.md) if you want to know about the infrastructure of our projects (Which is a must if you want to contribute)
+
+## Management
+- Lead: <a href="https://github.com/ujjwal-kr">@ujjwal-kr</a>
+- Maintainer: <a href="https://github.com/0xMrNight">@0xMrNight</a>
+- Maintainer: <a href="https://github.com/PhantomKnight287">@PhantomKnight287</a>

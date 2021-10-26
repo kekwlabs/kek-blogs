@@ -2,12 +2,12 @@
 
 This project is new and we expect you to atleast know basic reactjs and also basics of web development for you to understand this. Information about static site generation would be a plus.
 
-Language: [TypeScript](https://www.typescriptlang.org/)
-Framework: [Next.js](https://nextjs.org/docs)
-Style Framework: [Chakra UI](https://chakra-ui.com/)
-Style lib : [Emotion](https://emotion.sh/docs/introduction)
-Animation: [Framer motion](https://www.framer.com/motion/)
-Hosting: [cloudflare-pages](https://pages.dev)
+- Language: [TypeScript](https://www.typescriptlang.org/)
+- Framework: [Next.js](https://nextjs.org/docs)
+- Style Framework: [Chakra UI](https://chakra-ui.com/)
+- Style lib : [Emotion](https://emotion.sh/docs/introduction)
+- Animation: [Framer motion](https://www.framer.com/motion/)
+- Hosting: [cloudflare-pages](https://pages.dev)
 
 ## Structure
 
