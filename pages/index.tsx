@@ -8,12 +8,14 @@ const Home: NextPage = () => {
     return window.open('https://kekwlabs.github.io')
   }
 
+  let lol: String= "what"
+
   return (
     <main>
       <section className={styles.top}>
         <Container maxW="container.lg">
           <Text as="b" className={styles.mono} fontSize="4xl" color="cyan.500">KekwLabs Blog</Text>
-          <Text className={`${styles.mono} ${styles.desc}`} fontSize="1.1rem">Blog platform for kekwlabs' members to publish research blogs and writups based on computer science and security.</Text>
+          <Text className={`${styles.mono} ${styles.desc}`} fontSize="1.1rem">Blog platform for kekwlabs&apos; members to publish research blogs and writups based on computer science and security.</Text>
           <Button onClick={homepage} className={styles.btn} colorScheme="cyan">Join Us</Button>
         </Container>
       </section>
