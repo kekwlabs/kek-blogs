@@ -1,26 +1,26 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap");
 
 .top {
-    text-align: center;
+  text-align: center;
 }
 
 .mono {
-    font-family: "Roboto Mono", Monaco, Consolas, "Ubuntu Mono", monospace;
+  font-family: "Ubuntu Mono", monospace;
+  font-size: 1.3rem;
 }
-
 .desc {
-    margin-top: 1rem;
+  margin-top: 1rem;
 }
 
 .btn {
-    margin-top: 1rem;
+  margin-top: 1rem;
 }
 
 .blogs {
-    margin-top: 5rem;
-    text-align: left;
+  margin-top: 5rem;
+  text-align: left;
 }
 
 .blog {
-    padding: 1.5rem;
+  padding: 1.5rem;
 }
