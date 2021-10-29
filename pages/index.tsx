@@ -39,7 +39,7 @@ const Home: NextPage = () => {
             <Text as="b" fontSize="4xl" color="cyan.500">
               KekwLabs Blog
             </Text>
-            <Text className={styles.desc} fontSize="1.1rem">
+            <Text className={styles.desc} fontSize="1.4rem">
               Blog platform for kekwlabs&apos; members to publish research blogs
               and writups based on computer science and security.
             </Text>
