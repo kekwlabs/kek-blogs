@@ -30,7 +30,7 @@ const Home: NextPage = () => {
           name="description"
           content="blogging platform for members of kekwlabs to publish content on computer science research and writups"
         />
-        <meta name="image" property="og:image" content="../Images/logo.png" />
+        <meta name="image" property="og:image" content="/logo.png" />
         <meta name="viewport" content="width=device-width,initial-scale=1.0" />
       </Head>
       <main>
