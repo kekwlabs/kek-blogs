@@ -16,6 +16,15 @@
   margin-top: 1rem;
 }
 
+.btn:hover{
+  transform: scale(1.1,1.1);
+}
+
+.btn:active{
+  transform: scale(0.9,0.9);
+}
+
+
 .blogs {
   margin-top: 5rem;
   text-align: left;
