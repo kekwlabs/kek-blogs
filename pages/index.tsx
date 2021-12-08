@@ -3,6 +3,7 @@ import { Container, Text, Button } from "@chakra-ui/react"
 import styles from "../styles/home.module.css"
 import { Blogs, Blog } from "../types/blog"
 import Head from "next/head"
+import Titlebar from "../Components/titlebar"
 
 const Home: NextPage = () => {
   let homepage: any = () => {
@@ -36,9 +37,7 @@ const Home: NextPage = () => {
       <main>
         <section className={`${styles.mono} ${styles.top}`}>
           <Container maxW="container.lg">
-            <Text as="b" fontSize="4xl" color="cyan.500">
-              KekwLabs Blog
-            </Text>
+            <Titlebar />
             <Text className={styles.desc} fontSize="1.4rem">
               Blog platform for kekwlabs&apos; members to publish research blogs
               and writups based on computer science and security.
@@ -53,14 +52,6 @@ const Home: NextPage = () => {
           </Container>
           <div className={styles.blogs}>{blogs}</div>
         </section>
-
-        <Container padding="1.5rem" centerContent>
-          <Text fontSize="1.12rem" color="cyan.500" as="b">
-            <a href="https://github.com/orgs/kekwlabs/people">
-              &copy; kekwLabs
-            </a>
-          </Text>
-        </Container>
       </main>
     </>
   );
