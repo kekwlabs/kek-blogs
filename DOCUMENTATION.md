@@ -24,9 +24,8 @@ The project is very new and in its early stages of development, please make sure
 
 Routes-
 
-1. about
-2. `blog/:id` [blogs will stored in "uploads/" in .md format]
-3. `/blogs` [will show 10 blogs at a time]
+1. `blog/:id` [blogs will stored in "uploads/" in .md format]
+2. `/blogs` [Will show all the blogs pulished in the present year. For the previous years, there will be a button to switch to those.]
 
 ### Blogs Page [index]
 
@@ -34,13 +33,9 @@ A kekwLabs Blogs logo on top and a description of the blog contains list of late
 
 Description of the blog goes like: `Blog platform for kekwlabs' members to publish research and development content like blogs and writups on computer science and security research`
 
-### About Page
-
-About page, containing kekwLabs text as logo [which will have the link to `https://kekwlabs.github.io`] and description of the blog page and our team and link to github and our discord server.
-
 ### Blog Page
 
-Will fetch the blog from the `uploads` directory and will display on the page, converting markdown to html. The mechanism goes something like this:
+Will fetch the blog from the `uploads` and then the `/{year}` directory and will display on the page, converting markdown to html. The mechanism goes something like this:
 
 1. A function called `getStaticPaths` gets executed at build time which maps all the paths in the uploads folder and caches it somewhere
 2. Another function called `getStaticProps` also gets called at build time and takes all the params as the argument (I currently have no idea how this works but may figure it out soon if I read the docs more, if someone is reading this now, well I have not done that yet.) and fetches all the files from the uploads directory and outputs the build html.
@@ -48,9 +43,8 @@ Will fetch the blog from the `uploads` directory and will display on the page, c
 ## TODO
 1. Initialize next.js, add readme and contributor information --- [DONE]
 2. Install required packages [chakra, framer-motion] --- [DONE]
-3. Add the about page and write relevant information. 
-4. Build basic layout of the Blogs page, adding styles and shit.
-5. Add functionality to display list of blogs from the uploads directory to the Blogs page.
-6. Add fuctionality to convert `.md` to `html` and display on the blogs/:id page.
-7. Write `getStaticPaths` and `getStaticProps` with the functionality described above.
+3. Build basic layout of the Blogs page, adding styles and stuff.
+4. Add functionality to display list of blogs from the uploads/{year} directory to the Blogs page.
+5. Add fuctionality to convert `.md` to `html` and display on the blogs/:id page.
+6. Write `getStaticPaths` and `getStaticProps` with the functionality described above.
 

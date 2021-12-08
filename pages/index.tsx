@@ -1,13 +1,13 @@
-import type { NextPage } from "next";
-import { Container, Text, Button } from "@chakra-ui/react";
-import styles from "../styles/home.module.css";
-import { Blogs, Blog } from "../types/blog";
-import Head from "next/head";
+import type { NextPage } from "next"
+import { Container, Text, Button } from "@chakra-ui/react"
+import styles from "../styles/home.module.css"
+import { Blogs, Blog } from "../types/blog"
+import Head from "next/head"
 
 const Home: NextPage = () => {
   let homepage: any = () => {
-    return window.open("https://kekwlabs.github.io");
-  };
+    return window.open("https://kekwlabs.github.io")
+  }
 
   let blogs = Blogs.map((blog: Blog, i) => {
     return (
@@ -19,8 +19,8 @@ const Home: NextPage = () => {
         <br />
         <hr color="#00B5D8" />
       </Container>
-    );
-  });
+    )
+  })
 
   return (
     <>
