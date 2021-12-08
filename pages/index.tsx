@@ -1,13 +1,13 @@
-import type { NextPage } from "next"
-import { Container, Text, Button } from "@chakra-ui/react"
-import styles from "../styles/home.module.css"
-import { Blogs, Blog } from "../types/blog"
-import Head from "next/head"
+import type { NextPage } from "next";
+import { Container, Text, Button } from "@chakra-ui/react";
+import styles from "../styles/home.module.css";
+import { Blogs, Blog } from "../types/blog";
+import Head from "next/head";
 
 const Home: NextPage = () => {
   let homepage: any = () => {
-    return window.open("https://kekwlabs.github.io")
-  }
+    return window.open("https://kekwlabs.github.io");
+  };
 
   let blogs = Blogs.map((blog: Blog, i) => {
     return (
@@ -19,13 +19,13 @@ const Home: NextPage = () => {
         <br />
         <hr color="#00B5D8" />
       </Container>
-    )
-  })
+    );
+  });
 
   return (
     <>
       <Head>
-        <title>Kek blogs</title>
+        <title>kekBlogs</title>
         <meta
           name="description"
           content="blogging platform for members of kekwlabs to publish content on computer science research and writups"
@@ -37,10 +37,10 @@ const Home: NextPage = () => {
         <section className={`${styles.mono} ${styles.top}`}>
           <Container maxW="container.lg">
             <Text as="b" fontSize="4xl" color="cyan.500">
-              KekwLabs Blog
+              kekwLabs Blog
             </Text>
             <Text className={styles.desc} fontSize="1.4rem">
-              Blog platform for kekwlabs&apos; members to publish research blogs
+              Blog platform for kekwLabs&apos; members to publish research blogs
               and writups based on computer science and security.
             </Text>
             <Button
@@ -56,7 +56,7 @@ const Home: NextPage = () => {
 
         <Container padding="1.5rem" centerContent>
           <Text fontSize="1.12rem" color="cyan.500" as="b">
-            <a href="https://github.com/orgs/kekwlabs/people">
+            <a href="https://github.com/orgs/kekwLabs/people">
               &copy; kekwLabs
             </a>
           </Text>
