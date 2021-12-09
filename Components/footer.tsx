@@ -3,7 +3,7 @@ export default function Footer() {
         <footer className="Footer">
             <p>
                 <a href="https://github.com/orgs/kekwlabs/people">
-                &copy; kekwLabs
+                <code>&copy; kekwLabs</code>
                 </a>
             </p>
             <ul>

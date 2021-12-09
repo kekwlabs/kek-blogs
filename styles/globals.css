@@ -21,7 +21,8 @@ a {
 .Footer{
   display: flex;
   padding:10px;
-  background-color: rgb(107, 137, 202);
+  font-weight: bold;
+  background-color: rgb(12 17 25 / 76%);
 }
 
 .Footer p{
@@ -39,6 +40,7 @@ a {
 
 .Footer ul li{
   float:right;
+  transition: .3s;
 }
 
 .Footer ul li:hover{
