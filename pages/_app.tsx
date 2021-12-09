@@ -13,7 +13,8 @@ function MyApp({ Component, pageProps }: AppProps) {
   return (
     <ChakraProvider theme={theme}>
       <Component {...pageProps} />
-    </ChakraProvider>
-  );
+      <Footer />
+    </ChakraProvider> 
+  )
 }
 export default MyApp;

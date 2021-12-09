@@ -17,3 +17,36 @@ a {
 ::selection {
   background: rgb(1, 62, 87);
 }
+
+.Footer{
+  display: flex;
+  padding:10px;
+  background-color: rgb(107, 137, 202);
+}
+
+.Footer p{
+  margin:auto;
+  width:50%;
+}
+
+.Footer ul{
+  width:50%;
+  display: inline-block;
+  align-items: flex-end;
+  list-style-type: none;
+  margin:auto;
+}
+
+.Footer ul li{
+  float:right;
+}
+
+.Footer ul li:hover{
+  transform:scale(1.1, 1.1);
+}
+
+.contact-icons{
+  margin: auto;
+  padding: 5px;
+  width:50px;
+}
