@@ -4,13 +4,28 @@ import styles from "../styles/home.module.css"
 import { Blogs, Blog } from "../types/blog"
 import Head from "next/head"
 import Link from "next/link"
+import { getAllPosts } from "../types/blog"
 
-const Home: NextPage = () => {
+export async function getStaticProps(context: any){
+  const allPosts=getAllPosts();
+
+  return{
+      props:{
+        posts: allPosts.map(({data, content})=>({
+          ...data,
+          data:data,
+          content:content,
+        }))
+      }
+  };
+}
+
+const Home: NextPage = ({posts}) => {
   let homepage: any = () => {
     return window.open("https://kekwlabs.github.io");
   };
 
-  let blogs = Blogs.map((blog: Blog) => {
+  let blogs = posts.map((blog) => {
     return (
       <Container maxW="container.lg" className={styles.blog} key={blog.slug}>
         <Text as="u" fontSize="3xl">
@@ -24,6 +39,8 @@ const Home: NextPage = () => {
       </Container>
     );
   });
+  
+  
 
   return (
     <>
@@ -57,5 +74,6 @@ const Home: NextPage = () => {
     </>
   );
 };
+
 
 export default Home;

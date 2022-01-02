@@ -1,33 +1,42 @@
 import Head from "next/head";
-import { Blogs, Blog } from "../../types/blog";
+import { getAllPosts } from "../../types/blog";
 import styles from "../../styles/home.module.css"
 import { Container, Text, Button, StylesProvider } from "@chakra-ui/react"
 
-export default function BlogPage({title, description}) {
+export default function BlogPage({data, content}) {
+    console.log(content.content);
     return (
         <div>
             <Head>
-                <title>{title}</title>
+                <title>{data.title}</title>
             </Head>
-            <Text as="u" fontSize="3xl">{title}</Text>
-            <Text fontSize="1xl">{description}</Text>
+            <Text as="u" fontSize="3xl">{data.title}</Text>
+            <Text fontSize="1xl">{data.description}</Text>
+            <Text>{content}</Text>
         </div>
     )
 }
 
 export async function getStaticProps(context: any){
-    console.log('heyo',context);
+    const {params}= context;
+    const allPosts=getAllPosts();
+    const content=allPosts.find((item)=>item.slug ==params.slug);
+    // console.log('heyo',context);
     return{
-        props:Blogs.find((item)=>item.slug ==context.params.slug),
+        props:
+        {
+            data:content.data,
+            content:content.content
+        }
     };
 }
 
 export async function getStaticPaths(){
     // Blogs.map((blog: Blog)
     return{
-        paths: Blogs.map((blog: Blog)=>({
+        paths: getAllPosts().map((post)=>({
             params:{
-                slug:blog.slug,
+                slug:post.slug,
             },
         })),
         fallback: false,
