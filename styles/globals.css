@@ -1,5 +1,6 @@
 html,
 body {
+  min-height: 100vh;
   padding: 0;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
@@ -20,9 +21,12 @@ a {
 
 .Footer{
   display: flex;
+  position: relative;
+  width: 100%;
   padding:10px;
   font-weight: bold;
   background-color: rgb(12 17 25 / 76%);
+  bottom: 0;
 }
 
 .Footer p{
